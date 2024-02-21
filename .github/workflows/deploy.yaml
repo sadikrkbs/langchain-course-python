@@ -22,12 +22,12 @@ jobs:
 
       - name: Create .env file dynamically 🧨
         env:
-          ENV: ${{ secrets.ENV }}
+          #ENV: ${{ secrets.ENV }}
           EC2_USERNAME: ${{ secrets.EC2_USERNAME }}
 
          # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          echo "ENV=${ENV}" >> env
+        
           echo "EC2_USERNAME=${EC2_USERNAME}" >> env
          
 
